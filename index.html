@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>ダイスツール</title>
+</head>
+<body>
+    <h1 class="m-3">ダイスツール</h1>
+    <form id="form">
+        
+        <div class="m-3">
+        <label for="dice-qty">ダイスの個数</label>
+        <input type="number" id="dice-qty" placeholder="半角数字を入力" autocomplete="off">
+        </div>
+
+        <div class="m-3">
+        <label for="dice-face">ダイスの面数</label>
+        <input type="number" id="dice-face" placeholder="半角数字を入力" autocomplete="off">
+        </div>
+
+        <div class="mb-3 form-check">
+        <button type="submit" class="btn btn-primary" onClick="return check()">結果を表示</button>
+        
+        </div>
+        <div class="mb-3 form-check">
+        <button type="reset" id="result-reset" class="btn btn-secondary">リセット</button>
+        </div>
+    </form>
+
+    <div class="m-3">
+    <p>結果は↓に表示されます！</p>
+    </div>
+    
+    <div id="result" class="m-3 fs-2"></div>
+    </span>
+
+    
+    <div class="m-3">
+        <p class="fs-4">【使い方】</p>
+        <ul>
+            <li>振ったダイス目の合計値をランダムに出すツールです。</li>
+            <li>ダイスの個数に加え、面の数も指定できます。</li>
+            <li>ダイスの個数と面数の値の両方を設定したあと、「結果を表示」ボタンを押してください。</li>
+            <li>「リセット」ボタンを押すと、ダイスの個数と面数をリセットできます。</li>
+        </ul>
+        
+        <br>
+        <br>
+        <br>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
